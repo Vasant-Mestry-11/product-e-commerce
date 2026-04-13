@@ -1,0 +1,17 @@
+@use "./mixins.module";
+
+$primary-color: rgb(222, 70, 70);
+
+.title {
+  color: $primary-color;
+
+  a {
+    background-color: green;
+  }
+
+}
+// @include mobile() {
+//   .title {
+//     background-color: gray;
+//   }
+// }
