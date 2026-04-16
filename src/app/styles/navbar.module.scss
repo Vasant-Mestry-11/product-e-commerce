@@ -1,0 +1,48 @@
+@import "./variables.module.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $navbar-tertiary;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.logo {
+  font-family: "Princess Sofia";
+  font-size: 2rem;
+  font-weight: 700;
+  color: $navbar-primary;
+}
+
+.navlinks {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+
+  a {
+    color: $navbar-primary;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: $navbar-primary;
+
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+      height: 1px;
+      transform: scaleX(1);
+    }
+  }
+}

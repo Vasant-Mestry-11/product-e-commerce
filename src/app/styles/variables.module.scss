@@ -1,17 +1,7 @@
-@use "./mixins.module";
-
 $primary-color: rgb(222, 70, 70);
 
-.title {
-  color: $primary-color;
+$navbar-primary: #331d2c;
+$navbar-secondary: #a78295;
+$navbar-tertiary: #efe1d1;
 
-  a {
-    background-color: green;
-  }
-
-}
-// @include mobile() {
-//   .title {
-//     background-color: gray;
-//   }
-// }
+$white: #fcfcfc;
