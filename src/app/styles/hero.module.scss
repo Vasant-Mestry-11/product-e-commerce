@@ -1,0 +1,41 @@
+@import "./variables.module.scss";
+
+.heroBanner {
+  position: relative;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+
+  .left,
+  .right {
+    z-index: 1;
+  }
+}
+
+.overlay {
+  position: absolute;
+  background-color: $navbar-primary;
+  opacity: 75%;
+  inset: 0;
+}
+
+.topDescription {
+  color: $hero-text-tertiary;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.main_heading,
+.sub_heading {
+  font-size: 3.5rem;
+  color: $white;
+  font-weight: 600;
+}
+
+.description{
+  color: $white;
+
+}
