@@ -2,6 +2,7 @@ import Image from "next/image";
 import classes from "../styles/hero.module.scss";
 import HeroBG from "../_assets/hero-bg.webp";
 import Hero from "../_assets/hero.webp";
+import Button from "./Button";
 
 const HeroBanner = () => {
   return (
@@ -27,10 +28,12 @@ const HeroBanner = () => {
         </p>
 
         <div className={classes.cta}>
-          <button className={`${classes.primaryCta}`}>
-            Order Now - 10 Min Delivery.
-          </button>
-          <button className={classes.secondaryCta}>View Products</button>
+          <Button type="primary" className={`${classes.primaryCta}`}>
+            Order Now - 10 Min Delivery
+          </Button>
+          <Button type="secondary" className={classes.secondaryCta}>
+            View Products
+          </Button>
         </div>
       </div>
       <div className={classes.right}>

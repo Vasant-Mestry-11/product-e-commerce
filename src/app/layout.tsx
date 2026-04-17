@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Princess_Sofia } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Navbar from "./_components/Navbar";
 
 const poppins = Poppins({
