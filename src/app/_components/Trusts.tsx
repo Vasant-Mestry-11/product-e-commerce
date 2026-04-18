@@ -4,6 +4,7 @@ import PaperStack from "../_assets/paper stack.svg";
 import CheckInCircle from "../_assets/check inside circle.svg";
 import StarOutlined from "../_assets/star outlined 3.svg";
 import Chips from "./Chips";
+import classes from "../styles/trusts.module.scss";
 
 const CHIPS = [
   {
@@ -29,13 +30,13 @@ const CHIPS = [
   {
     id: 5,
     name: "4.5+ Rating on Blinkit",
-    icon: StarOutlined
-  }
+    icon: StarOutlined,
+  },
 ];
 
 const Trusts = () => {
   return (
-    <section className="container">
+    <section className={`container ${classes.trusts}`}>
       {CHIPS.map(({ id, name, icon }) => (
         <Chips key={id} id={id} name={name} icon={icon} />
       ))}

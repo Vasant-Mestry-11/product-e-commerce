@@ -1,0 +1,11 @@
+@import "./variables.module.scss";
+
+.trusts {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $hero-text-tertiary;
+  background-color: $navbar-tertiary;
+  justify-content: center;
+}
