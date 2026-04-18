@@ -2,7 +2,7 @@ import Image from "next/image";
 import classes from "../styles/hero.module.scss";
 import HeroBG from "../_assets/hero-bg.webp";
 import Hero from "../_assets/hero.webp";
-import Button from "./Button";
+import Button from "../_components/Button";
 
 const HeroBanner = () => {
   return (

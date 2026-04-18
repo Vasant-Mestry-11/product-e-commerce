@@ -1,4 +1,4 @@
-import HeroBanner from "./_components/HeroBanner";
+import HeroBanner from "./_sections/HeroBanner";
 import Trusts from "./_sections/Trusts";
 import WhereToBuy from "./_sections/WhereToBuy";
 
