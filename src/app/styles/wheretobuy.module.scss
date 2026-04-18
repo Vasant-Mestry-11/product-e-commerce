@@ -1,0 +1,57 @@
+@import "./variables.module.scss";
+
+.whereToBuy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $navbar-tertiary;
+  padding: 1.7rem 16rem;
+}
+
+.leftHeading {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $whereToBuy;
+  margin-right: 1rem;
+}
+
+.rightHeading {
+  font-size: 0.8rem;
+  color: $whereToBuy;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 0.5rem;
+}
+
+.bigbasket,
+.blinkit,
+.instamart,
+.zepto {
+  font-size: 0.9rem;
+  padding: 0.8rem 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.blinkit {
+  background-color: $blinkit-background;
+  color: $blinkit-text;
+}
+
+.zepto {
+  background-color: $zepto-background;
+  color: $zepto-text;
+}
+
+.instamart {
+  background-color: $swiggy-background;
+  color: $swiggy-text;
+}
+
+.bigbasket {
+  background-color: $big-basket-background;
+  color: $big-basket-text;
+}
