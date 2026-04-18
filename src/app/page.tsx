@@ -1,6 +1,6 @@
 import HeroBanner from "./_components/HeroBanner";
-import Trusts from "./_components/Trusts";
-import WhereToBuy from "./_components/WhereToBuy";
+import Trusts from "./_sections/Trusts";
+import WhereToBuy from "./_sections/WhereToBuy";
 
 export default function Home() {
   return (

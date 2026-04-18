@@ -3,7 +3,7 @@ import ShieldOutlined from "../_assets/shield outlined.svg";
 import PaperStack from "../_assets/paper stack.svg";
 import CheckInCircle from "../_assets/check inside circle.svg";
 import StarOutlined from "../_assets/star outlined 3.svg";
-import Chips from "./Chips";
+import Chips from "../_components/Chips";
 import classes from "../styles/trusts.module.scss";
 
 const CHIPS = [
