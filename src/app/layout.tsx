@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Princess_Sofia } from "next/font/google";
+import { Poppins, Princess_Sofia, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.scss";
 import Navbar from "./_components/Navbar";
 
@@ -7,6 +7,11 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
   subsets: ["devanagari", "latin", "latin-ext"],
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin", "latin-ext"],
 });
 
 const princesssofia = Princess_Sofia({
@@ -25,7 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${princesssofia.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${princesssofia.variable} ${jakarta.variable}`}
+    >
       <body>
         <header>
           <Navbar />

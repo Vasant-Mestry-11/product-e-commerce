@@ -1,5 +1,5 @@
 interface ButtonProps {
-  type: "primary" | "secondary";
+  type?: "primary" | "secondary";
   onClick?: () => void;
   outlined?: boolean;
   children: React.ReactNode;
@@ -12,7 +12,7 @@ const BUTTON_TYPE = {
 };
 
 const getClassname = (
-  type: "primary" | "secondary",
+  type: "primary" | "secondary" = "primary",
   outlined: boolean = false,
 ) => {
   let classname: string = "";
